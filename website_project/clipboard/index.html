@@ -11,7 +11,100 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <title>Starter Tailwind</title>
+    <title>Clipboard</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Sekcja Gora -->
+    <section id="hero">
+      <div class="section-container mb-40 pt-16">
+        <img src="/images/logo.svg" alt="" class="mx-auto my-16" />
+        <h3>Historia wszystkiego co kopiujesz</h3>
+
+        <p class="max-w-3xl mx-auto mb-10 text-2xl text-grayishBlue">
+          Clipboard pozwala śledzić i organizować wszystko, co kopiujesz.
+          Natychmiastowy dostęp do schowka na wszystkich urządzeniach.
+        </p>
+        <!-- Guziki kontener -->
+        <div class="button-container">
+          <a
+            href="#"
+            class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
+            >Pobierz na iOS</a
+          >
+
+          <a
+            href="#"
+            class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
+            >Pobierz na Mac</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Druga sekcja -->
+    <section id="snippets">
+      <div class="section-container my-20">
+        <h3>Śledzić swoje snippety</h3>
+        <p
+          class="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-grayishBlue"
+        >
+          Schowek natychmiast zapisuje każdy skopiowany element w chmurze, co
+          oznacza, że masz natychmiastowy dostęp do Dzięki temu masz
+          natychmiastowy dostęp do skrawków na wszystkich urządzeniach. Nasze
+          aplikacje dla komputerów Mac i iOS pomogą Ci wszystko zorganizować.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sekcja Trzecia -->
+    <section id="features">
+      <div class="section-container my-20">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!-- Zdjecie -->
+          <div class="md:w-1/2">
+            <img
+              src="./images/image-computer.png"
+              alt=""
+              class="md:absolute top-0 right-[50%]"
+            />
+          </div>
+          <!-- Kontener text -->
+          <div
+            class="flex flex-col mt-16 mb-24 space-y-12 md:space-y-0 text-xl md:mb-60 md:text-left md:pl-16 md:w-1/2"
+          >
+            <!-- Item 1 -->
+            <div class="">
+              <h5 class="mb-2 text-2xl font-bold text-drakGrayishBlue">
+                Szybkie wyszukiwanie
+              </h5>
+              <p class="max-w-md text-grayishBlue">
+                Pobierz wszystkie fragmenty od pierwszego momentu, kiedy
+                zacząłeś używać aplikacji.
+              </p>
+            </div>
+            <!-- Item 2 -->
+            <div class="">
+              <h5 class="mb-2 text-2xl font-bold text-drakGrayishBlue">
+                iCloud Synchronizacja
+              </h5>
+              <p class="max-w-md text-grayishBlue">
+                Błyskawicznie zapisuje i synchronizuje fragmenty na wszystkich
+                urządzeniach.
+              </p>
+            </div>
+            <!-- item 3 -->
+            <div class="">
+              <h5 class="mb-2 text-2xl font-bold text-drakGrayishBlue">
+                Całkowita historia
+              </h5>
+              <p class="max-w-md text-grayishBlue">
+                Odzyskaj wszystkie fragmenty od pierwszego momentu, kiedy
+                zacząłeś używać aplikacji.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
