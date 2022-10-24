@@ -15,7 +15,9 @@
       type="image/png"
       href="./images/favicon-32x32.png"
     />
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Shortly</title>
   </head>
   <body>
@@ -83,9 +85,294 @@
 
         <!-- zdjecie -->
         <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
-          <img src="./images/illustration-working.svg" alt="" />
+          <img src="./images/illustration-working.svg" class="mx-auto" alt="" />
         </div>
       </div>
     </section>
+
+    <!-- Linki sekcja -->
+    <section id="shorten" class="relative bg-gray-100">
+      <!-- Kontener -->
+      <div class="max-w-4xl mx-auto p-6 space-y-6">
+        <!-- formularz -->
+        <form
+          id="link-form"
+          class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
+        >
+          <input
+            type="text"
+            class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
+            placeholder="Skróć swój link"
+            id="link-input"
+          />
+          <button
+            class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
+          >
+            Skróć link!
+          </button>
+          <!-- error wiadomosc -->
+          <div
+            id="err-msg"
+            class="absolute left-7 bottom-3 text-red text-sm italic"
+          ></div>
+        </form>
+
+        <!-- link1 -->
+        <div
+          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+        >
+          <p class="font-bold text-center text-veryDarkViolet md:text-left">
+            https://frontendmentor.io
+          </p>
+
+          <div
+            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+          >
+            <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
+
+            <button
+              class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+            >
+              Kopiuj
+            </button>
+          </div>
+        </div>
+        <!-- link2 -->
+        <div
+          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+        >
+          <p class="font-bold text-center text-veryDarkViolet md:text-left">
+            https://twitter.com/frontendmentor
+          </p>
+
+          <div
+            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+          >
+            <div class="font-bold text-cyan">https://rel.ink/k4123k</div>
+
+            <button
+              class="p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none"
+            >
+              Kopiuj
+            </button>
+          </div>
+        </div>
+        <!-- link3 -->
+        <div
+          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+        >
+          <p class="font-bold text-center text-veryDarkViolet md:text-left">
+            https://linkedin.com/frontendmentor
+          </p>
+
+          <div
+            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+          >
+            <div class="font-bold text-cyan">https://rel.ink/k4aaeK</div>
+
+            <button
+              class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+            >
+              Kopiuj
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sekcja statystyki -->
+    <section id="stats" class="py-24 bg-gray-100">
+      <div class="container mx-auto px-3">
+        <h2 class="text-4xl mb-6 font-bold text-center">
+          Zaawansowana statystyka
+        </h2>
+        <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+          Śledź jak Twoje linki radzą sobie w sieci dzięki naszemu
+          zaawansowanemu statystyki.
+        </p>
+      </div>
+    </section>
+    <!-- sekcja funkcji  -->
+    <section id="features" class="pb-32 bg-gray-100">
+      <div
+        class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+      >
+        <!-- pozioma linia -->
+        <div
+          class="hidden absolute top-24 left-16 h-3 w-10/12 bg-cyan md:block"
+        ></div>
+
+        <!-- pionowa linia -->
+        <div class="absolute w-2 h-full -ml-1 left-1/2 bg-cyan md:hidden"></div>
+
+        <!-- box 1 -->
+        <div
+          class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3"
+        >
+          <!-- zdjecie pozycja -->
+          <div class="absolute -ml-10 -top-10 md:left-16 left-1/2">
+            <!-- zdjdecie konterner bg  -->
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+            >
+              <img src="./images/icon-brand-recognition.svg" alt="" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Rozpoznawalność marki
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Zwiększaj rozpoznawalność swojej marki z każdym kliknięciem.
+            Generyczne linki nie nic nie znaczą. Markowe linki pomagają wzbudzić
+            zaufanie do Twoich treści.
+          </p>
+        </div>
+
+        <!-- box 2 -->
+        <div
+          class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:w-1/3 md:mt-8"
+        >
+          <!-- zdjecie pozycja -->
+          <div class="absolute -ml-10 -top-10 md:left-16 left-1/2">
+            <!-- zdjdecie konterner bg  -->
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+            >
+              <img src="./images/icon-detailed-records.svg" alt="" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Szczegółowe zapisy
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Zyskaj wgląd w to, kto klika w Twoje linki. Wiedza o tym, kiedy i
+            gdzie ludzie angażują się w Twoje treści, pomaga podejmować lepsze
+            decyzje.
+          </p>
+        </div>
+
+        <!-- box 3 -->
+        <div
+          class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:w-1/3 md:mt-16"
+        >
+          <!-- zdjecie pozycja -->
+          <div class="absolute -ml-10 -top-10 md:left-16 left-1/2">
+            <!-- zdjdecie konterner bg  -->
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+            >
+              <img src="./images/icon-fully-customizable.svg" alt="" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            W pełni konfigurowalny
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Zwiększ świadomość marki i odkrywczość treści dzięki
+            spersonalizowane linki, zwiększające zaangażowanie odbiorców.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sekcja dolna -->
+    <section id="cta" class="py-24 bg-darkViolet">
+      <div class="flex flex-col p-2 space-y-6">
+        <h5
+          class="mx-auto space-y-10 text-4xl font-bold text-center text-white"
+        >
+          Wzmocnij swoje linki już dziś
+        </h5>
+        <button
+          class="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight md:text-base md:py-3 focus:outline-none"
+        >
+          Zacznijmy
+        </button>
+      </div>
+    </section>
+    <footer class="py-16 bg-veryDarkViolet">
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+      >
+        <!-- logo -->
+        <img src="./images/logo.svg" alt="" />
+
+        <!-- menu kontener -->
+        <div
+          class="flex flex-col space-y-16 md:space-y-0 md:space-x-20 md:flex-row"
+        >
+          <!-- menu1  -->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="mb-5 font-bold text-white capitalize">Funkcje</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Skróć link</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Linki firmowe</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Analiza</a
+              >
+            </div>
+          </div>
+          <!-- menu2  -->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="mb-5 font-bold text-white capitalize">Funkcje</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Blog</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Twórcy</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Pomoc</a
+              >
+            </div>
+          </div>
+          <!-- menu3  -->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="mb-5 font-bold text-white capitalize">Funkcje</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >O nas</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Nasz zespół</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Kariera</a
+              >
+              <a href="#" class="capitalize text-grayishViolet hover:text-cyan"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- sociale kontener -->
+        <div class="flex space-x-6">
+          <a href="#" class="">
+            <img src="./images/icon-facebook.svg" alt="" class="ficon" />
+          </a>
+          <a href="#" class="">
+            <img src="./images/icon-twitter.svg" alt="" class="ficon" />
+          </a>
+          <a href="#" class="">
+            <img src="./images/icon-pinterest.svg" alt="" class="ficon" />
+          </a>
+          <a href="#" class="">
+            <img src="./images/icon-instagram.svg" alt="" class="ficon" />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
