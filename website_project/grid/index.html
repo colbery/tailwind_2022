@@ -11,9 +11,219 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Starter Tailwind</title>
+    <title>Gridy</title>
   </head>
-  <body>
-    <h1 class="text-3xl bg-red-600">TAILWIND</h1>
+  <body class="bg-gray-200">
+    <!-- kontener globalny -->
+    <div class="container mx-auto max-w-7xl p-2 md:p-10">
+      <!-- grid kontener -->
+      <div class="text-white">
+        <!-- Box1 -->
+        <div class="relative p-10 rounded-xl bg-purple-700">
+          <!-- zdjecie -->
+          <img
+            src="./images/bg-pattern-quotation.svg"
+            alt=""
+            class="absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150"
+          />
+          <!-- naglowek box -->
+          <div class="flex z-10 space-x-4">
+            <img
+              src="./images/image-daniel.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+            />
+            <div class="text-sm">
+              <h4 class="opacity-90">Wojtek Pacak</h4>
+              <p class="opacity-50">Uczeń / Student</p>
+            </div>
+          </div>
+          <!-- tekst duzy -->
+          <p class="relative z-10 mt-6 text-xl">
+            Otrzymałem ofertę pracy w połowie kursu, a przedmioty, których się
+            nauczyłem, były aktualne, jeśli nie bardziej, w firmie, do której
+            dołączyłem. Szczerze mówiąc, czuję, że że dostałem wszystko, co było
+            warte pieniędzy.
+          </p>
+          <!-- tekst maly -->
+          <p class="mt-6 opacity-50">
+            "Byłem EMT przez wiele lat, zanim dołączyłem do bootcampu. I've been
+            szukając przejścia i słyszałem kilka osób, które miały niesamowite
+            doświadczenie tutaj. Zapisałem się na darmowy kurs wstępny i i
+            okazało się, że to niesamowita zabawa! Wkrótce potem zapisałem się
+            na kurs. Następne 12 tygodni było najlepszym - i najbardziej
+            wyczerpującym - czasem w moim życiu. Od ukończenia kursu, z
+            powodzeniem zmieniłem karierę, pracując jako inżynier oprogramowania
+            w startupie VR. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ratione vero repudiandae, quasi atque officiis eum consectetur
+            odio amet dolorem deleniti repellat expedita aut sunt laudantium cum
+            itaque nam voluptatum quod! Quo totam sequi omnis deserunt? Sit nam
+            molestiae excepturi, perspiciatis labore deleniti eum, eligendi
+            quisquam quod sed nobis exercitationem tempora! "
+          </p>
+        </div>
+
+        <!-- Box2 -->
+        <div class="p-10 rounded-xl bg-gray-600">
+          <!-- naglowek box -->
+          <div class="flex space-x-4">
+            <img
+              src="./images/image-jonathan.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+            />
+            <div class="text-sm">
+              <h4 class="opacity-90">Mateusz Starecki</h4>
+              <p class="opacity-50">Frontend / Student</p>
+            </div>
+          </div>
+          <!-- tekst duzy -->
+          <p class="mt-6 text-xl">
+            Zespół był bardzo wspierający i utrzymywał mnie w motywacji
+          </p>
+          <!-- tekst maly -->
+          <p class="mt-6 opacity-50">
+            "Zaczynałem jako totalny newbie z praktycznie zerowymi
+            umiejętnościami kodowania. Teraz pracuję jako inżynier mobilny w
+            dużej firmie. To była jedna z najlepszych inwestycji, jakie
+            poczyniłem w siebie". Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Atque ipsam veritatis natus illum ullam ab,
+            nesciunt rerum nobis, quibusdam ad voluptatum rem necessitatibus
+            facere nihil deleniti assumenda vel velit neque quia, nisi ipsum
+            laudantium impedit eveniet iste. Pariatur, exercitationem
+            consequuntur praesentium a est eum velit quos maiores ipsum facere
+            tempora! "
+          </p>
+        </div>
+
+        <!-- Box3 -->
+        <div class="hidden p-10 rounded-xl text-gray-900 bg-white">
+          <!-- naglowek box -->
+          <div class="flex space-x-4">
+            <img
+              src="./images/image-kira.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+            />
+            <div class="text-sm">
+              <h4 class="opacity-90">Wojciech Wojciechowski</h4>
+              <p class="opacity-50">Student</p>
+            </div>
+          </div>
+          <!-- tekst duzy -->
+          <p class="mt-6 text-xl">
+            Takie zmieniające życie doświadczenie. Gorąco polecam!
+          </p>
+          <!-- tekst maly -->
+          <p class="mt-6 opacity-50">
+            "Przed przystąpieniem do bootcampu nigdy nie napisałem ani linijki
+            kodu. I Potrzebowałem pewnej struktury od profesjonalistów, którzy
+            pomogą mi nauczyć się programowania krok po kroku. Zostałem
+            zachęcony do zapisania się przez byłego ich student, który może
+            powiedzieć tylko wspaniałe rzeczy o programie. programie. Cały
+            program i pracownicy nie zawiedli. Oni Byli bardzo praktyczni i
+            nigdy nie musiałam długo czekać na pomoc. Projekt Projekt zespołu
+            agile, w szczególności, był wybitny. Wziął moją naukę do następnego
+            poziomu w sposób, w jaki żaden samouczek nie mógł miał. W
+            rzeczywistości, często powoływałem się na niego podczas rozmów
+            kwalifikacyjnych jako przykład mojego doświadczenia w rozwoju. Z
+            pewnością pomogło mi to w znalezieniu pracy jako full-stack
+            developer po otrzymaniu wielu ofert. 100% polecam!"
+          </p>
+        </div>
+
+        <!-- Box4 -->
+        <div class="p-10 rounded-xl text-gray-900 bg-white">
+          <!-- naglowek box -->
+          <div class="flex space-x-4">
+            <img
+              src="./images/image-jeanette.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+            />
+            <div class="text-sm">
+              <h4 class="opacity-90">Ola Olakowska</h4>
+              <p class="opacity-50">Student</p>
+            </div>
+          </div>
+          <!-- tekst duzy -->
+          <p class="mt-6 text-xl">
+            Ogólnie rzecz biorąc, wspaniałe i satysfakcjonujące doświadczenie
+          </p>
+          <!-- tekst maly -->
+          <p class="mt-6 opacity-50">
+            "Dziękuję za wspaniałe doświadczenie! Mam teraz pracę, którą
+            naprawdę lubię i zarabiam na życie robiąc coś, co kocham".
+          </p>
+        </div>
+
+        <!-- Box5 -->
+        <div class="p-10 rounded-xl bg-gray-900">
+          <!-- naglowek box -->
+          <div class="flex space-x-4">
+            <img
+              src="./images/image-patrick.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+            />
+            <div class="text-sm">
+              <h4 class="opacity-90">Mateusz Wielicki</h4>
+              <p class="opacity-50">Frontend</p>
+            </div>
+          </div>
+          <!-- tekst duzy -->
+          <p class="mt-6 text-xl">
+            Niesamowite wsparcie dydaktyczne ze strony asystentów, którzy sami
+            przeszli bootcamp. Otrzymywanie od nich wskazówek i uczenie się z
+            ich doświadczeń było łatwe.
+          </p>
+          <!-- tekst maly -->
+          <p class="mt-6 opacity-50">
+            "Personel wydaje się być autentycznie zainteresowany moimi
+            postępami, co jest dla mnie naprawdę odświeżające. Program dał mi
+            pewność siebie niezbędną do być w stanie wyjść na świat i
+            zaprezentować się jako zdolny młodszego programistę. Standard jest
+            wyższy niż u innych. Otrzymasz osobistą uwagę, której potrzebujesz
+            od niesamowitej społeczności inteligentnych i niesamowitych ludzi."
+          </p>
+        </div>
+
+        <!-- Box6 -->
+        <div class="p-10 rounded-xl text-gray-900 bg-white">
+          <!-- naglowek box -->
+          <div class="flex space-x-4">
+            <img
+              src="./images/image-kira.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+            />
+            <div class="text-sm">
+              <h4 class="opacity-90">Wojciech Wojciechowski</h4>
+              <p class="opacity-50">Student</p>
+            </div>
+          </div>
+          <!-- tekst duzy -->
+          <p class="mt-6 text-xl">
+            Takie zmieniające życie doświadczenie. Gorąco polecam!
+          </p>
+          <!-- tekst maly -->
+          <p class="mt-6 opacity-50">
+            "Przed przystąpieniem do bootcampu nigdy nie napisałem ani linijki
+            kodu. I Potrzebowałem pewnej struktury od profesjonalistów, którzy
+            pomogą mi nauczyć się programowania krok po kroku. Zostałem
+            zachęcony do zapisania się przez byłego ich student, który może
+            powiedzieć tylko wspaniałe rzeczy o programie. programie. Cały
+            program i pracownicy nie zawiedli. Oni Byli bardzo praktyczni i
+            nigdy nie musiałam długo czekać na pomoc. Projekt Projekt zespołu
+            agile, w szczególności, był wybitny. Wziął moją naukę do następnego
+            poziomu w sposób, w jaki żaden samouczek nie mógł miał. W
+            rzeczywistości, często powoływałem się na niego podczas rozmów
+            kwalifikacyjnych jako przykład mojego doświadczenia w rozwoju. Z
+            pewnością pomogło mi to w znalezieniu pracy jako full-stack
+            developer po otrzymaniu wielu ofert. 100% polecam!"
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
