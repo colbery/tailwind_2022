@@ -5,9 +5,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Starter Tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bookmark</title>
   </head>
-  <body>
-    <h1 class="text-3xl bg-red-600">TAILWIND</h1>
+  <body class="overflow-x-hidden">
+    <nav class="container relative mx-auto p-6">
+      <!-- flex contener  -->
+      <div class="flex items-center justify-between space-x-20 my-6">
+        <!-- logo -->
+        <div class="z-30">
+          <img src="./images/logo-bookmark.svg" alt="" id="logo" />
+        </div>
+
+        <!-- menu  -->
+        <div
+          class="hidden items-center md:flex space-x-10 uppercase text-grayishBlue"
+        >
+          <a href="#features" class="tracking-widest hover:text-softRed"
+            >funkcje</a
+          >
+          <a href="#download" class="tracking-widest hover:text-softRed"
+            >pobierz</a
+          >
+          <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
+          <a
+            href="#"
+            class="px-8 py-2 text-white bg-softRed boder-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white"
+            >Zaloguj</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- sekcja herooo -->
+    <section id="hero">
+      <!-- img/text contener -->
+      <div
+        class="container flex flex-col-reverse p-6 mx-auto lg:flex-row lg:mb-0"
+      >
+        <!-- text -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1
+            class="text-3xl font-semibold text-center lg:text-6xl lg:text-left"
+          >
+            Prosty menedżer zakładek
+          </h1>
+          <p
+            class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+          >
+            Czysty i prosty interfejs do organizowania swoich ulubionych stron
+            internetowych. Otwórz nową kartę przeglądarki i zobacz, jak twoje
+            strony ładują się błyskawicznie. Wypróbuj go za za darmo.
+          </p>
+
+          <!-- kontner guziki -->
+          <div
+            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+          >
+            <a
+              href="#"
+              class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:text-softBlue"
+              >Sciągnij na Chrome</a
+            >
+
+            <a
+              href="#"
+              class="p-4 text-sm font-semibold text-black bg-gray-300 rounded shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600"
+              >Sciągnij na Firefox</a
+            >
+          </div>
+        </div>
+        <!-- image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="bg-hero"></div>
+          <img
+            src="./images/illustration-hero.svg"
+            alt=""
+            class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- funkcjie naglowek -->
+    <section id="features">
+      <div class="container mx-auto mt-16 px-6">
+        <h2 class="mb-6 text-4xl font-semiBold text-center">Funkcje</h2>
+        <p class="max-w-md mx-auto text-center text-grayishBlue">
+          Naszym celem jest umożliwienie Ci szybkiego i łatwego dostępu do
+          Twoich ulubionych stron internetowych. Twoje zakładki są
+          synchronizowane między urządzeniami, więc możesz mieć do nich dostęp
+          do nich w podróży.
+        </p>
+      </div>
+    </section>
+
+    <!-- funkcjie tabsy -->
+    <section id="tabs">
+      <!-- tabs kontener -->
+      <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+        <div class="bg-tabs"></div>
+        <!-- tabs kontener flex -->
+        <div
+          class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
+        >
+          <!-- tab1 -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-1"
+          >
+            <div class="py-5 border-b-4 border-softRed" data-target="panel-1">
+              Proste zakładki
+            </div>
+          </div>
+
+          <!-- tab2 -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-2"
+          >
+            <div class="py-5" data-target="panel-2">Szybkie wyszukiwanie</div>
+          </div>
+
+          <!-- tab3 -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-3"
+          >
+            <div class="py-5" data-target="panel-3">Łatwe udostępnianie</div>
+          </div>
+        </div>
+
+        <!-- tabs panel -->
+        <section id="panels" class="container mx-auto">
+          <!-- panel1 -->
+
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- panel image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+
+            <!-- panel kontent -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Zakładki w jednym kliknięciu
+              </h3>
+
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Organizuj swoje zakładki jak tylko chcesz. Nasz prosty interfejs
+                "przeciągnij i upuść" daje Ci pełną kontrolę nad tym, jak
+                zarządzania ulubionymi stronami.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >Wiecej Informacji</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- panel2 -->
+
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- panel image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+
+            <!-- panel kontent -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Inteligentne wyszukiwanie
+              </h3>
+
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Nasza potężna funkcja wyszukiwania pomoże Ci znaleźć zapisane
+                strony w krótkim w krótkim czasie. Nie musisz przeglądać
+                wszystkich swoich zakładek.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >Wiecej Informacji</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- panel3 -->
+
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- panel image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+
+            <!-- panel kontent -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Łatwe udostępnianie
+              </h3>
+
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Łatwo udostępniaj innym swoje zakładki i kolekcje. Utwórz stronę
+                udostępniane łącze, które możesz wysłać jednym kliknięciem.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >Wiecej Informacji</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
   </body>
 </html>
